@@ -12,4 +12,5 @@ function vim_yank_with_context#main()
   let s:separator = repeat("-", strlen(s:current_file_path))
   let s:result = " " . s:current_file_path . " ▾\n " . s:separator . "\n" . s:numbered_lines
   let @+ = s:result
+  echo 'Yanked with context'
 endfunction
