@@ -1,2 +1,2 @@
 command! YankWithContext call vim_yank_with_context#main()
-xnoremap <C-y> <ESC>:YankWithContext<CR>
+xnoremap <expr> <C-y>  { "V": "\<ESC>:YankWithContext\<CR>", "v": "" }[mode()]
