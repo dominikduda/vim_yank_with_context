@@ -1,6 +1,6 @@
 function vim_yank_with_context#main()
-  call feedkeys('gv"1y', 'tx')
-  let s:copied_text = getreg('1')
+  call feedkeys('gv"+y', 'tx')
+  let s:copied_text = getreg('+')
   let s:top_selected_line_number = getpos("'<")[1]
   let s:current_file_path = expand("%")
   let s:numbered_lines = system(
