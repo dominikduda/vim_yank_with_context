@@ -3,7 +3,7 @@
 # vim_yank_with_context
 Plugin copying code to clipboard formatted with line numbers and path to file.
 
-## Example output
+##### Example output
 ```
  app/views/contractor_cost_summaries/show.html.haml ▾
  --------------------------------------------------
