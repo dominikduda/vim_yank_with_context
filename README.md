@@ -3,8 +3,8 @@
 # vim_yank_with_context
 Plugin copying code to clipboard formatted with line numbers and path to file.
 
-##### Example output
-
+## Example output
+```
  app/views/contractor_cost_summaries/show.html.haml ▾
  --------------------------------------------------
      7	.grid
@@ -14,6 +14,7 @@ Plugin copying code to clipboard formatted with line numbers and path to file.
     11	.grid
     12	  .col-7_lg-10_md-12
     13	    = render 'show_contractors'
+```
 
 ##### Why should you use it?
   - The plugin is good way to share your code even if your chat does not support block code format
