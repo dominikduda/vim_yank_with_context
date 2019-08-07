@@ -4,7 +4,7 @@ function vim_yank_with_context#main()
   let s:top_selected_line_number = getpos("'<")[1]
   let s:current_file_path = expand("%")
   let s:numbered_lines = system(
-    \ "cat <<'EOF' | nl --body-numbering=a --starting-line-number=" .
+    \ "cat <<'EOF' | nl -b a -v " .
     \ s:top_selected_line_number .
     \ "\n" .
     \ s:copied_text .
